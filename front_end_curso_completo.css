@@ -29,6 +29,7 @@ header {
     font-size:0.8rem;
     padding-inline:0.7rem;
     margin-inline:0.5rem;
+    white-space:nowrap;
     
 }
 
@@ -94,7 +95,7 @@ a {
 #main_img {
     width:15rem;
     height:23rem;
-    margin:1rem 2rem;   
+    /* margin:1rem 2rem;    */
 }
 
 #main_title {
@@ -113,7 +114,7 @@ a {
 }
 
 aside {
-    width:21%;
+    width:20%;
     border-radius: 1rem;
     border: 5px solid lightgray;
     margin-inline:1rem;
@@ -133,7 +134,7 @@ aside {
     float:right;   
 }
 
-a.link-style {
+.link-style {
     text-decoration:none;
     color:blue;
 }
@@ -253,11 +254,70 @@ table.table-pagamento tbody tr td {
     display:flex; 
     flex-direction:row; 
     font-size:0.6875rem; 
-    gap: 3.25rem; 
+    gap: 2.5rem; 
     text-align: center; 
     margin-block:1rem;
+    
 }
 
 .especial {
     text-shadow: 4px 4px 2px blueviolet;
+    white-space: nowrap;
+}
+
+#left-part {
+    margin: 1rem 2rem;
+}
+
+#partes-de-frente-e-de-tras {
+    margin-top: 1.5rem;
+}
+
+#seja-um {
+    font-size:small;
+    /* margin-block: 0.1rem; */
+}
+
+#botao-seguir {
+    width:100px;
+     height:30px;
+}
+
+#nome-do-autor {
+    font-size:small; 
+    white-space:nowrap;
+}
+
+#imagem-de-perfil {
+    border-radius:4rem; 
+    width:50px; 
+    height:50px;
+}
+
+#autor-da-venda{
+    display:flex; 
+    flex-direction:row; 
+    align-items:center; 
+    gap:1rem;
+}
+
+#seguir-autor {
+    font-weight:bold; 
+    margin-block:1rem; 
+    font-size:small
+}
+
+#parte-autor {
+    display:flex;
+    flex-direction:column;
+}
+
+hr {
+    border: 1px solid lightgray;
+}
+
+#frequentemente-comprados {
+    margin-block:1rem; 
+    font-size:large; 
+    font-weight:bold;
 }
