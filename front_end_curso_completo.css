@@ -30,7 +30,12 @@ header {
     padding-inline:0.7rem;
     margin-inline:0.5rem;
     white-space:nowrap;
-    
+    cursor:pointer;
+
+}
+
+nav .wrapper_text:hover, .superior .wrapper_text:hover {
+    border: 1px solid white;
 }
 
 .more_text {
@@ -51,11 +56,26 @@ nav {
     /*font-weight:bold;*/
 }
 
+nav.padrao01 .wrapper_text, .superior .wrapper_text{
+    height:100%;
+    align-items: center;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    white-space:inherit;
+}
+
 .padrao02 {
     color:black;
     font-weight:normal;
     font-size:0.6rem;
     padding-block:0.7rem;
+}
+
+.wrapper_text.padrao02:hover{
+    color:orange;
+    border-bottom: 2px solid orange;
 }
 
 #banner {
@@ -99,7 +119,7 @@ a {
 }
 
 #main_title {
-    font-size:xx-large;    
+    font-size:1.75rem;    
 }
 
 #capa {
@@ -115,7 +135,7 @@ a {
 
 aside {
     width:20%;
-    height:600px;
+    height:580px;
     border-radius: 1rem;
     border: 5px solid lightgray;
     margin-inline:1rem;
@@ -160,16 +180,25 @@ aside {
     margin-block:0.25rem;
     width:15rem;
     border:none;
+    cursor:pointer;
+
 }
 
 #first-button {
     background-color: yellow;
 }
 
+#first-button:hover {
+    background-color: rgb(212, 212, 36);
+}
+
 #second-button {
     background-color: orange;
 }
 
+#second-button:hover {
+    background-color: rgb(199, 150, 58);
+}
 .margin-bottom-one-rem {
     margin-bottom:1rem;
 }
@@ -188,6 +217,8 @@ table.table-pagamento tbody tr td {
     justify-content: start;
     align-items:start;
     padding:0.2rem;
+    vertical-align:top;
+    white-space:nowrap;
 
 }
 
@@ -222,6 +253,8 @@ table.table-pagamento tbody tr td {
     width:15rem;
     border: 1px solid darkgray;
     text-align:left;
+    margin-block:0.75rem;
+    cursor:pointer;
 }
 
 #capa-comum {
@@ -317,8 +350,223 @@ hr {
     border: 1px solid lightgray;
 }
 
-#frequentemente-comprados {
+.titulo-por-secao {
     margin-block:1rem; 
     font-size:large; 
     font-weight:bold;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#items-frequentemente-comprados {
+    display:flex; 
+    flex-direction:row; gap:1rem; 
+    align-items:center;
+}
+
+.item-enfatizado {
+    width:200px;
+}
+
+#items-frequentemente-comprados figure {
+    width:100%; 
+    height:100%; 
+    display:flex; 
+    align-items:center; 
+    flex-direction:column; 
+    justify-content:center;
+}
+
+.janela-deslizante figure {
+    width:100%; 
+    height:100%; 
+    display:flex; 
+    flex-direction:column; 
+}
+
+.janela-deslizante figure .ajuste-imagem {
+    width:100%; 
+    height:100%; 
+    display:flex; 
+    align-items:center; 
+    flex-direction:column; 
+    justify-content:center;
+}
+
+#items-frequentemente-comprados figcaption, .janela-deslizante figcaption {
+    margin-top:1rem;
+    font-size:small;
+}
+
+.preco {
+    font-weight:bold; 
+    font-size:large;
+}
+
+.plus-sign {
+    color:gray; 
+    font-size:xx-large; 
+    text-shadow: 4px 4px 2px darkgray;
+}
+
+.margin-left-one-rem {
+    margin-left:1rem;
+}
+
+.janela-deslizante {
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.janela-deslizante .autor-livro {
+    font-size:x-small;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.janela-deslizante .tipo-livro {
+    color:gray;
+    font-size:x-small;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+
+.janela-deslizante .preco-livro {
+    font-size:large;
+    color:darkred;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.janela-deslizante .marca {
+    font-size:x-small;
+    color:cadetblue;
+    font-weight:bold;
+}
+
+.parte-superior {
+    margin-bottom: 4rem;
+}
+
+.botao-avancar {
+    width: 50px;
+    border-radius:10px;
+    border: 1px solid lightgray;
+    height: 50px;
+    align-self: center;
+    font-weight:bold;
+    font-size:large;
+    color:darkgray;
+}
+
+.preco-negocio {
+    font-size:large;
+    color:darkred;
+    font-family:'Courier New', Courier, monospace;
+}
+
+.button-style3 {
+    border-radius:0.625rem;
+    padding: 0.25rem 0.6rem;
+    width:7rem;
+    border:none;
+    font-size:x-small;
+    white-space:nowrap;
+    background-color: orange;
+    height:1.75rem;
+    float:right;
+    cursor:pointer;
+    position:relative;
+    top:-5px;
+}
+
+.button-style3:hover {
+    background-color:orangered;
+}
+
+table.table-negocios {
+    border: 1px solid lightgray;
+    border-collapse: collapse;
+    font-size: small;
+    white-space:nowrap;
+    width: 15.75rem;
+    margin-block:1rem;
+    border-collapse:separate;
+
+    overflow:hidden;
+    border-collapse:separate;
+    -webkit-border-radius: 12px;
+       -moz-border-radius: 12px;
+            border-radius: 12px;
+}
+
+.table-negocios td, .table-negocios th {
+    border: 1px solid lightgray;
+    /* padding: 0.2rem 0.5rem; */
+    font-size: x-small;
+    padding: 6px;
+}
+
+.gratis {
+    /* text-transform: uppercase; */
+    font-weight: bold;
+    font-variant:small-caps;
+}
+
+.frete {
+    /* color:gray; */
+    font-weight:bold;
+}
+
+.vendido-por {
+    color:gray;
+}
+
+.table-negocios td div, .table-negocios th div {
+    font-size: 0.75rem;
+    margin-block: 0.25rem;
+}
+
+#tem-para-vender {
+    font-size: small;
+    margin-block: 0.25rem; 
+}
+
+.button-style4 {
+    padding: 0.375rem 0.75rem;
+    border-radius: 0.5rem;
+    border: 1px solid lightgray;
+    background-color: white;
+    cursor:pointer;
+}
+
+.painel-separado {
+    /* background-color:lightslategray; */
+    width:16rem; 
+    display:flex; 
+    flex-direction:column;
+    align-items: center;
+}
+
+#secao-de-compras {
+    margin-bottom:2rem;
+}
+
+#rota {
+    text-shadow: -4px 4px 2px gray;
+}
+
+hr.divisoria-maior {
+    margin: 1rem;
+}
+
+ul {
+    margin-left:1rem;
+    margin-top:0.5rem;
+}
+
+.detalhes-do-produto-texto {
+    display: flex;
+    flex-direction:column;
+    gap:0.5rem;
+    margin-block:0.5rem;
+    margin-left:1rem;
 }
