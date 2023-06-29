@@ -614,3 +614,48 @@ ul {
 #siga-autores {
     margin-bottom:2rem;
 }
+
+.pergunta-experiencia {
+    font-size:x-large;
+    font-weight:bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.barra-avaliacao{
+    width:10rem; 
+    height:0.25rem; 
+    align-self:center;
+    background-color:lightgray;
+}
+
+.painel-avaliacao {
+    display:flex; 
+    flex-direction: column; 
+    gap:4rem; 
+    align-items:center;
+}
+
+#radio-avaliacao {
+    display:flex; 
+    flex-direction:row;
+}
+
+.traco {
+    font-weight: bold;
+    font-size:large;
+    color:lightgray;
+}
+
+#avaliacao-ordinal {
+    display:flex;
+    flex-direction:row;
+    gap:1.2rem;
+    position:relative;
+    left:-0.8rem; 
+}
+
+.parte-avaliacao {
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
