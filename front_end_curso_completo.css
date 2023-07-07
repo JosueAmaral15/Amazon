@@ -368,6 +368,12 @@ hr {
     width:200px;
 }
 
+.item-enfatizado figure {
+    line-height : 1.2rem;
+}
+
+
+
 #items-frequentemente-comprados figure {
     width:100%; 
     height:100%; 
@@ -396,6 +402,13 @@ hr {
 #items-frequentemente-comprados figcaption, .janela-deslizante figcaption {
     margin-top:1rem;
     font-size:small;
+}
+
+.item-enfatizado figure figcaption {
+    display:flex;
+    justify-content:start;
+    align-items:start;
+    vertical-align:top;
 }
 
 .preco {
@@ -434,6 +447,12 @@ hr {
 .janela-deslizante .preco-livro {
     font-size:large;
     color:darkred;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.janela-deslizante .preco-livro2 {
+    font-size:large;
+    color:black;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -773,3 +792,6 @@ footer .footer-observacoes {
     padding-top:3rem;
 }
 
+.texto-oferta {
+    white-space: pre-wrap;
+}
